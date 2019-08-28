@@ -8,10 +8,10 @@ use App\User;
 
 class AuthController extends Controller
 {
-    public function __construct()
-    {
-        $this->middleware('api.auth');
-    }
+    // public function __construct()
+    // {
+    //     $this->middleware('api.auth');
+    // }
 
     public function register(Request $request)
     {
