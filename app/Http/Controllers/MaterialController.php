@@ -79,7 +79,7 @@ class MaterialController extends Controller
         $thumbnail = $request->thumbnail;
         $content = $request->content;
 
-        $material = new Material;
+        $material = Material::find($id);
         $material->thumbnail = $request->thumbnail;
         $material->title = $request->title;
         $material->content = $request->content;
